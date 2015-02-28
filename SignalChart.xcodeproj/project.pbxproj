@@ -15,6 +15,12 @@
 		255FCC5A1AA19F2500811A17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 255FCC591AA19F2500811A17 /* Images.xcassets */; };
 		255FCC5D1AA19F2500811A17 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 255FCC5B1AA19F2500811A17 /* LaunchScreen.xib */; };
 		255FCC691AA19F2500811A17 /* SignalChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 255FCC681AA19F2500811A17 /* SignalChartTests.m */; };
+		255FCC811AA1A03A00811A17 /* AxisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 255FCC741AA1A03A00811A17 /* AxisView.m */; };
+		255FCC821AA1A03A00811A17 /* CoreSignalGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 255FCC761AA1A03A00811A17 /* CoreSignalGraphView.m */; };
+		255FCC831AA1A03A00811A17 /* SignalGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 255FCC781AA1A03A00811A17 /* SignalGraph.m */; };
+		255FCC841AA1A03A00811A17 /* SignalGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 255FCC7A1AA1A03A00811A17 /* SignalGraphView.m */; };
+		255FCC861AA1A03A00811A17 /* XAxisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 255FCC7E1AA1A03A00811A17 /* XAxisView.m */; };
+		255FCC871AA1A03A00811A17 /* YAxisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 255FCC801AA1A03A00811A17 /* YAxisView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +48,18 @@
 		255FCC621AA19F2500811A17 /* SignalChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignalChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		255FCC671AA19F2500811A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		255FCC681AA19F2500811A17 /* SignalChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignalChartTests.m; sourceTree = "<group>"; };
+		255FCC731AA1A03A00811A17 /* AxisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxisView.h; sourceTree = "<group>"; };
+		255FCC741AA1A03A00811A17 /* AxisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxisView.m; sourceTree = "<group>"; };
+		255FCC751AA1A03A00811A17 /* CoreSignalGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreSignalGraphView.h; sourceTree = "<group>"; };
+		255FCC761AA1A03A00811A17 /* CoreSignalGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreSignalGraphView.m; sourceTree = "<group>"; };
+		255FCC771AA1A03A00811A17 /* SignalGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalGraph.h; sourceTree = "<group>"; };
+		255FCC781AA1A03A00811A17 /* SignalGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalGraph.m; sourceTree = "<group>"; };
+		255FCC791AA1A03A00811A17 /* SignalGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalGraphView.h; sourceTree = "<group>"; };
+		255FCC7A1AA1A03A00811A17 /* SignalGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalGraphView.m; sourceTree = "<group>"; };
+		255FCC7D1AA1A03A00811A17 /* XAxisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XAxisView.h; sourceTree = "<group>"; };
+		255FCC7E1AA1A03A00811A17 /* XAxisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XAxisView.m; sourceTree = "<group>"; };
+		255FCC7F1AA1A03A00811A17 /* YAxisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAxisView.h; sourceTree = "<group>"; };
+		255FCC801AA1A03A00811A17 /* YAxisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAxisView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +101,7 @@
 		255FCC481AA19F2500811A17 /* SignalChart */ = {
 			isa = PBXGroup;
 			children = (
+				255FCC721AA1A03A00811A17 /* SignalGraph */,
 				255FCC4D1AA19F2500811A17 /* AppDelegate.h */,
 				255FCC4E1AA19F2500811A17 /* AppDelegate.m */,
 				255FCC531AA19F2500811A17 /* ViewController.h */,
@@ -120,6 +139,25 @@
 				255FCC671AA19F2500811A17 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		255FCC721AA1A03A00811A17 /* SignalGraph */ = {
+			isa = PBXGroup;
+			children = (
+				255FCC731AA1A03A00811A17 /* AxisView.h */,
+				255FCC741AA1A03A00811A17 /* AxisView.m */,
+				255FCC751AA1A03A00811A17 /* CoreSignalGraphView.h */,
+				255FCC761AA1A03A00811A17 /* CoreSignalGraphView.m */,
+				255FCC771AA1A03A00811A17 /* SignalGraph.h */,
+				255FCC781AA1A03A00811A17 /* SignalGraph.m */,
+				255FCC791AA1A03A00811A17 /* SignalGraphView.h */,
+				255FCC7A1AA1A03A00811A17 /* SignalGraphView.m */,
+				255FCC7D1AA1A03A00811A17 /* XAxisView.h */,
+				255FCC7E1AA1A03A00811A17 /* XAxisView.m */,
+				255FCC7F1AA1A03A00811A17 /* YAxisView.h */,
+				255FCC801AA1A03A00811A17 /* YAxisView.m */,
+			);
+			path = SignalGraph;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,10 +260,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				255FCC871AA1A03A00811A17 /* YAxisView.m in Sources */,
+				255FCC821AA1A03A00811A17 /* CoreSignalGraphView.m in Sources */,
 				255FCC4F1AA19F2500811A17 /* AppDelegate.m in Sources */,
+				255FCC811AA1A03A00811A17 /* AxisView.m in Sources */,
 				255FCC4C1AA19F2500811A17 /* main.m in Sources */,
+				255FCC831AA1A03A00811A17 /* SignalGraph.m in Sources */,
 				255FCC551AA19F2500811A17 /* ViewController.m in Sources */,
 				255FCC521AA19F2500811A17 /* SignalChart.xcdatamodeld in Sources */,
+				255FCC861AA1A03A00811A17 /* XAxisView.m in Sources */,
+				255FCC841AA1A03A00811A17 /* SignalGraphView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
